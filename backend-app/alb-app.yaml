@@ -15,9 +15,10 @@ spec:
           - path: /*
             pathType: Prefix
             backend:
-              serviceName: web-nginx-module
-              servicePort: 80
-
+              service:
+                name: web-nginx-module
+                port:
+                  number: 80
 ---
 apiVersion: apps/v1
 kind: Deployment
