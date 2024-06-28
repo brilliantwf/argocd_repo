@@ -5,3 +5,6 @@ resources:
 - ../../base
 patches:
 - path: replica_count.yaml
+
+commonAnnotations:
+  usage: demo
